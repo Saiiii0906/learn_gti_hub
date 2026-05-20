@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Weekly Timetable</title>
+	<style>
+		body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table.timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table.timetable th, table.timetable td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        table.timetable th {
+            background-color: #f2f2f2;
+            color: #555;
+        }
+        table.timetable td .slot {
+            display: block;
+            background-color: #e7f3ff;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        table.timetable td .slot .subject {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        table.timetable td .slot .meta {
+            font-size: 0.9em;
+            color: #555;
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Weekly Timetable</h1>
+		<table class="timetable" aria-label="Weekly timetable">
+			<thead>
+				<tr>
+					<th>Time</th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="time-col">08:00 - 09:00</td>
+					<td><span class="slot"><span class="subject">Math</span><span class="meta">Room 101 • Mr. Kumar</span></span></td>
+					<td><span class="slot"><span class="subject">English</span><span class="meta">Room 102 • Ms. Rao</span></span></td>
+					<td><span class="slot"><span class="subject">Physics</span><span class="meta">Lab 1 • Dr. Verma</span></span></td>
+					<td><span class="slot"><span class="subject">Computer</span><span class="meta">Lab 2 • Mr. Singh</span></span></td>
+					<td><span class="slot"><span class="subject">History</span><span class="meta">Room 103 • Ms. Das</span></span></td>
+				</tr>
+				<tr>
+					<td class="time-col">09:15 - 10:15</td>
+					<td><span class="slot"><span class="subject">Chemistry</span><span class="meta">Room 104 • Dr. Roy</span></span></td>
+					<td><span class="slot"><span class="subject">Math</span><span class="meta">Room 101 • Mr. Kumar</span></span></td>
+					<td><span class="slot"><span class="subject">Geography</span><span class="meta">Room 105 • Ms. Nair</span></span></td>
+					<td><span class="slot"><span class="subject">English</span><span class="meta">Room 102 • Ms. Rao</span></span></td>
+					<td><span class="slot"><span class="subject">Sports</span><span class="meta">Ground • Coach</span></span></td>
+				</tr>
+				<tr>
+					<td class="time-col">10:30 - 11:30</td>
+					<td><span class="slot"><span class="subject">Art</span><span class="meta">Room 106 • Ms. Iyer</span></span></td>
+					<td><span class="slot"><span class="subject">Computer</span><span class="meta">Lab 2 • Mr. Singh</span></span></td>
+					<td><span class="slot"><span class="subject">Math</span><span class="meta">Room 101 • Mr. Kumar</span></span></td>
+					<td><span class="slot"><span class="subject">Physics</span><span class="meta">Lab 1 • Dr. Verma</span></span></td>
+					<td><span class="slot"><span class="subject">Music</span><span class="meta">Room 107 • Mr. Das</span></span></td>
+				</tr>
+				<tr>
+					<td class="time-col">11:45 - 12:45</td>
+					<td colspan="5"><span class="slot"><span class="subject">Lunch / Break</span><span class="meta">Relax and recharge</span></span></td>
+				</tr>
+				<tr>
+					<td class="time-col">13:00 - 14:00</td>
+					<td><span class="slot"><span class="subject">Biology</span><span class="meta">Room 108 • Dr. Patel</span></span></td>
+					<td><span class="slot"><span class="subject">History</span><span class="meta">Room 103 • Ms. Das</span></span></td>
+					<td><span class="slot"><span class="subject">English</span><span class="meta">Room 102 • Ms. Rao</span></span></td>
+					<td><span class="slot"><span class="subject">Chemistry</span><span class="meta">Room 104 • Dr. Roy</span></span></td>
+					<td><span class="slot"><span class="subject">Free Study</span><span class="meta">Library</span></span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart - Online Shopping</title>
+    <link rel="stylesheet" href="flipkart-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shopping-bag"></i>
+                <span>Flipkart</span>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands and more">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <div class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Wishlist</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Bar -->
+    <div class="category-bar">
+        <div class="category-container">
+            <div class="category-item">
+                <i class="fas fa-mobile-alt"></i>
+                <p>Mobiles</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-laptop"></i>
+                <p>Electronics</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-tshirt"></i>
+                <p>Fashion</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-dumbbell"></i>
+                <p>Sports</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-book"></i>
+                <p>Books</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-utensils"></i>
+                <p>Food</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-gift"></i>
+                <p>Offers</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-container">
+            <div class="banner-slide active">
+                <img src="https://via.placeholder.com/1200x400/FF9900/FFFFFF?text=Best+Offers" alt="Banner 1">
+            </div>
+            <div class="banner-slide">
+                <img src="https://via.placeholder.com/1200x400/0066FF/FFFFFF?text=New+Arrivals" alt="Banner 2">
+            </div>
+            <div class="banner-slide">
+                <img src="https://via.placeholder.com/1200x400/3399FF/FFFFFF?text=Electronics+Sale" alt="Banner 3">
+            </div>
+        </div>
+        <button class="prev-btn" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-btn" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Deal of the Day Section -->
+    <section class="deals-section">
+        <div class="section-header">
+            <h2>Deals of the Day</h2>
+            <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Product+1" alt="Product 1">
+                    <span class="discount-badge">30% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>Premium Headphones</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(2.5K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹4,999</span>
+                        <span class="original-price">₹7,999</span>
+                    </div>
+                    <p class="product-desc">High quality audio with noise cancellation</p>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Product+2" alt="Product 2">
+                    <span class="discount-badge">25% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>Smart Watch</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(1.8K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹2,499</span>
+                        <span class="original-price">₹3,999</span>
+                    </div>
+                    <p class="product-desc">Track your fitness & health metrics</p>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Product+3" alt="Product 3">
+                    <span class="discount-badge">40% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>Wireless Charger</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(3.2K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹999</span>
+                        <span class="original-price">₹1,699</span>
+                    </div>
+                    <p class="product-desc">Fast charging for all devices</p>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Product+4" alt="Product 4">
+                    <span class="discount-badge">50% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>USB-C Cable</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(4.1K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹199</span>
+                        <span class="original-price">₹399</span>
+                    </div>
+                    <p class="product-desc">Durable & fast data transfer cable</p>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Product+5" alt="Product 5">
+                    <span class="discount-badge">35% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>Power Bank 20000mAh</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5.5K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹1,299</span>
+                        <span class="original-price">₹1,999</span>
+                    </div>
+                    <p class="product-desc">Keep your devices charged on the go</p>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Product+6" alt="Product 6">
+                    <span class="discount-badge">20% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>Bluetooth Speaker</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(2.9K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹1,999</span>
+                        <span class="original-price">₹2,499</span>
+                    </div>
+                    <p class="product-desc">Premium sound quality, portable</p>
+                </div>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Product+7" alt="Product 7">
+                    <span class="discount-badge">45% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>Phone Stand</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(1.5K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹299</span>
+                        <span class="original-price">₹549</span>
+                    </div>
+                    <p class="product-desc">Adjustable, sturdy phone holder</p>
+                </div>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Product+8" alt="Product 8">
+                    <span class="discount-badge">15% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>Screen Protector</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(3.8K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹399</span>
+                        <span class="original-price">₹499</span>
+                    </div>
+                    <p class="product-desc">Tempered glass protection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="deals-section">
+        <div class="section-header">
+            <h2>Best Sellers</h2>
+            <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Best+1" alt="Best Seller 1">
+                    <span class="discount-badge">New</span>
+                </div>
+                <div class="product-info">
+                    <h3>T-Shirt Cotton</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(4.5K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹399</span>
+                        <span class="original-price">₹699</span>
+                    </div>
+                    <p class="product-desc">Comfortable & breathable fabric</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Best+2" alt="Best Seller 2">
+                    <span class="discount-badge">Hot</span>
+                </div>
+                <div class="product-info">
+                    <h3>Running Shoes</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(6.2K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹1,999</span>
+                        <span class="original-price">₹3,499</span>
+                    </div>
+                    <p class="product-desc">Perfect for sports & casual wear</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Best+3" alt="Best Seller 3">
+                    <span class="discount-badge">Sale</span>
+                </div>
+                <div class="product-info">
+                    <h3>Jeans Blue Denim</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(3.7K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹799</span>
+                        <span class="original-price">₹1,499</span>
+                    </div>
+                    <p class="product-desc">Classic fit, durable denim</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/200x200/E0E0E0/666666?text=Best+4" alt="Best Seller 4">
+                    <span class="discount-badge">Trending</span>
+                </div>
+                <div class="product-info">
+                    <h3>Winter Jacket</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5.1K)</span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹1,499</span>
+                        <span class="original-price">₹2,999</span>
+                    </div>
+                    <p class="product-desc">Warm & stylish for cold weather</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Flipkart</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Policy</h4>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Flipkart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="flipkart-script.js"></script>
+</body>
+</html>

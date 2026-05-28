@@ -4,12 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> 
-        height: 100vh; 
-        width: 100%;
+    <style>
+        :root{
+
+            --main-color: yellow;
+            --main-height1: 800px;
+            --main-width1: 800px;
+
+            --main-border: 2px solid black;
+            --main-height2: 100px;
+            --main-width2: 600px;
+
+            --main-height3: 100px;
+            --main-width3: 100px; 
+
+            --main-height4:100px
+            --main-width4: 100px;
+            --main-border-radius1:50px;
+
+            --main-height5: 100px;
+            --main-width5: 500px;
+        }
+
+        .one{
+            background-color: var(--main-color);
+            height: var(--main-height1);
+            width: var(--main-width1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .two{
+            border: var(--main-border);
+            height: var(--main-height2);
+            width: var(--main-width2);
+            
+        }
+
+        .three{
+            border: var(--main-border);
+            height: var(--main-height3);
+            width: var(--main-width3);
+            
+        }
+
+        .four{
+            border: var(--main-border);
+            height: var(--main-height3);
+            width: var(--main-width3);
+        }
+
+        .five{
+            border: var(--main-border);
+            height: var(--main-height3);
+            width: var(--main-width3);
+        }
+
+        .six{
+            border: var(--main-border);
+            height: var(--main-height4);
+            width: var(--main-width4);
+            border-radius: var(--main-border-radius1);
+        }
+
+        .seven{
+            border: var(--main-border);
+            height: var(--main-height5);
+            width: var(--main-width5);
+        }
+        
     </style>
 </head>
 <body>
-    <div style="background-image: url('https://www.example.com/background.jpg');"></div>
+    <div class="one">
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+    </div>
+    
 </body>
 </html>

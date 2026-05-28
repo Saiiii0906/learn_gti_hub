@@ -1,70 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Z-Index Stack</title>
+
   <style>
+
     body{
+      margin:0;
+      height:100vh;
       display:flex;
       justify-content:center;
       align-items:center;
-      height:100vh;
       background:#f2f2f2;
     }
 
     .container{
-      position: relative;
-      width: 400px;
-      height: 250px;
+      position:relative;
+      width:500px;
+      height:300px;
     }
 
     .box{
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      border: 3px solid black;
-      background: transparent;
+      position:absolute;
+      width:90px;
+      height:90px;
+      border:3px solid black;
     }
 
-    /* stacking using z-index */
+    /* Box 1 */
     .box1{
-      top: 0;
-      left: 0;
-      z-index: 5;
+      background:red;
+      top:0;
+      left:0;
+      z-index:5;
     }
 
+    /* Box 2 */
     .box2{
-      top: 30px;
-      left: 50px;
-      z-index: 4;
+      background:blue;
+      top:35px;
+      left:55px;
+      z-index:4;
     }
 
+    /* Box 3 */
     .box3{
-      top: 60px;
-      left: 100px;
-      z-index: 3;
+      background:green;
+      top:70px;
+      left:110px;
+      z-index:3;
     }
 
+    /* Box 4 */
     .box4{
-      top: 90px;
-      left: 150px;
-      z-index: 2;
+      background:orange;
+      top:105px;
+      left:165px;
+      z-index:2;
     }
 
+    /* Box 5 */
     .box5{
-      top: 120px;
-      left: 200px;
-      z-index: 1;
+      background:purple;
+      top:140px;
+      left:220px;
+      z-index:1;
     }
 
   </style>
 </head>
+
 <body>
 
   <div class="container">
+
     <div class="box box1"></div>
+
     <div class="box box2"></div>
+
     <div class="box box3"></div>
+
     <div class="box box4"></div>
+
     <div class="box box5"></div>
+
   </div>
 
 </body>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f2f2f2;
+}
+
+.card{
+    width:350px;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.cover{
+    height:150px;
+    background:#4facfe;
+}
+
+.profile{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:3px solid #ffffff;
+    box-shadow:0 0 0 5px #4facfe;
+    background:#ddd;
+    margin:-60px auto 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:10px 20px 25px;
+}
+
+h2{
+    margin-bottom:5px;
+}
+
+p{
+    color:gray;
+    margin-bottom:20px;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:18px;
+}
+
+.fb{background:#1877f2;}
+.tw{background:#1da1f2;}
+.ig{background:#e1306c;}
+.yt{background:#ff0000;}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+button{
+    padding:10px 25px;
+    border:none;
+    border-radius:25px;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.subscribe{
+    background:#0474f5;
+}
+
+.message{
+    background:#0474f5;
+}
+
+.stats{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    border-top:1px solid #ddd;
+    padding-top:15px;
+}
+
+.stat{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    color:#555;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="cover"></div>
+
+    <!-- Profile Photo -->
+    <div class="profile">
+        <img src="download(3).jpg" alt="Profile Photo">
+    </div>
+    <div class="content">
+        <h2>Jhon Wick</h2>
+        <p>Professional Assassin</p>
+        <div class="social-icons">
+            <div class="icon fb">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icon tw">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="icon ig">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="icon yt">
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="subscribe">Subscribe</button>
+            <button class="message">Message</button>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <i class="fa-regular fa-heart"></i>
+                50.2K
+            </div>
+            <div class="stat">
+                <i class="fa-regular fa-comment"></i>
+                4.2K
+            </div>
+            <div class="stat">
+                <i class="fa-solid fa-share"></i>
+                12.4K
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

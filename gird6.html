@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#f4f4f4;
+        }
+
+        .container{
+            width:800px;
+            height:500px;
+            border:3px solid black;
+            padding:10px;
+
+            display:grid;
+
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "box1 center right-top"
+                "box2 center right-top"
+                "box2 center right-top"
+                "box3 center right-bottom";
+
+            gap:10px;
+        }
+
+        .box1{ grid-area:box1; }
+        .box2{ grid-area:box2;}
+        .box3{ grid-area:box3; }
+        .center{ grid-area:center; }
+        .right-top{grid-area:right-top;}
+        .right-bottom{grid-area:right-bottom;}
+
+        /* Left Side Boxes */
+        .box1{
+            grid-column:1;
+            grid-row:1;
+            background-color:aqua;
+        }
+
+        .box2{
+            grid-column:1;
+            grid-row:2 / 4;
+            background-color:rgb(0, 255, 0);
+        }
+
+        .box3{
+            grid-column:1;
+            grid-row:4;
+            background-color:blue;
+        }
+        
+
+        /* Center Large Box */
+        .center{
+            grid-column:2;
+            grid-row:1 / 5;
+            background-color:rgb(255, 0, 0);
+        }
+
+        /* Right Side */
+        .right-top{
+            grid-column:3;
+            grid-row:1 / 4;
+            background-color:yellow;
+        }
+
+        .right-bottom{
+            grid-column:3;
+            grid-row:4;
+            background-color:rgb(255, 0, 255);
+        }
+
+        .box{
+            border:2px solid black;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:22px;
+            font-weight:bold;
+            background:white;
+        }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+
+    <div class="box center">Center</div>
+
+    <div class="box right-top">4</div>
+    <div class="box right-bottom">5</div>
+
+</div>
+
+</body>
+</html>

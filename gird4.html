@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      
+      background:#f4f6f9;
+    }
+
+    .container{
+      width:650px;
+      height:420px;
+      padding:25px;
+      border-radius:15px;
+     
+      display:grid;
+      grid-template-columns:180px 1fr 1fr;
+      grid-template-rows:120px 1fr 1fr;
+      gap:20px;
+      
+    }
+
+    .sidebar{
+      grid-row:1/4;
+      background:linear-gradient(180deg,#06b6d4,#3b82f6);
+      border-radius:12px;
+    }
+
+    .top{
+      grid-column:2/4;
+      background:linear-gradient(90deg,#f59e0b,#ef4444);
+      border-radius:12px;
+    }
+
+    .card1{
+      background:#10b981;
+      border-radius:12px;
+    }
+
+    .card2{
+      background:#8b5cf6;
+      border-radius:12px;
+    }
+
+    .card3{
+      background:#f43f5e;
+      border-radius:12px;
+    }
+
+    .card4{
+      background:#facc15;
+      border-radius:12px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar"></div>
+    <div class="top"></div>
+
+    <div class="card1"></div>
+    <div class="card2"></div>
+
+    <div class="card3"></div>
+    <div class="card4"></div>
+</div>
+
+</body>
+</html>

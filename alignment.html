@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f4f4;
+}
+
+.container{
+    width:900px;
+    height:500px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+
+    border:3px solid black;
+}
+
+.item{
+    border:2px solid black;
+    display:flex;
+    padding:10px;
+}
+
+.box{
+    width:80px;
+    height:50px;
+    background:skyblue;
+    border:2px solid black;
+}
+
+/* Alignments according to sketch */
+
+.cell1{
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.cell2{
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.cell3{
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.cell4{
+    justify-content:flex-start;
+    align-items:flex-end;
+}
+
+.cell5{
+    justify-content:center;
+    align-items:center;
+}
+
+.cell6{
+    justify-content:flex-end;
+    align-items:flex-start;
+}
+
+.cell7{
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.cell8{
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.cell9{
+    justify-content:flex-start;
+    align-items:flex-end;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="item cell1">
+            <div class="box"></div>
+        </div>
+
+        <div class="item cell2">
+            <div class="box"></div>
+        </div>
+
+        <div class="item cell3">
+            <div class="box"></div>
+        </div>
+
+        <div class="item cell4">
+            <div class="box"></div>
+        </div>
+
+        <div class="item cell5">
+            <div class="box"></div>
+        </div>
+
+        <div class="item cell6">
+            <div class="box"></div>
+        </div>
+
+        <div class="item cell7">
+            <div class="box"></div>
+        </div>
+
+        <div class="item cell8">
+            <div class="box"></div>
+        </div>
+
+        <div class="item cell9">
+            <div class="box"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
